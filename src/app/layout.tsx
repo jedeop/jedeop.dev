@@ -4,7 +4,8 @@ import "./globals.css";
 import { Noto_Serif_KR } from 'next/font/google'
 
 const noto_serif = Noto_Serif_KR({
-  variable: "--font-noto"
+  variable: "--font-noto",
+  subsets: ["latin"],
 })
 
 export const metadata: Metadata = {
