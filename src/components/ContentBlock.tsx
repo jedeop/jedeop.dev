@@ -9,9 +9,7 @@ const colors = {
   "emerald": "border-emerald-300 bg-emerald-100 shadow-emerald-100/50 dark:border-emerald-800 dark:bg-emerald-950 dark:shadow-emerald-950/50",
 };
 
-
-
-interface ContentBlockProps {
+export interface Content {
   Icon: Icon;
   title: string;
   text: string;
@@ -19,23 +17,27 @@ interface ContentBlockProps {
   link?: string;
 }
 
-export default function ContentBlock({ Icon, title, text, color, link }: ContentBlockProps) {
-  const content = (
-    <div className={`flex flex-col gap-4 p-4 rounded-lg shadow-md border ${colors[color]} h-full`}>
-      <Icon size={36} className="shrink-0 mb-auto ml-auto" />
+interface ContentBlockProps {
+  content: Content;
+}
+
+export default function ContentBlock({ content }: ContentBlockProps) {
+  const body = (
+    <div className={`flex flex-col gap-4 p-4 rounded-lg shadow-lg border ${colors[content.color]} h-full`}>
+      <content.Icon size={36} className="shrink-0 mb-auto ml-auto" />
       <div className="mt-2">
         <div className="font-bold">
-          {title}
+          {content.title}
         </div>
         <div className="whitespace-pre-wrap">
-          {text}
+          {content.text}
         </div>
       </div>
     </div>
   )
   return (
-    link
-      ? <Link href={link}>{content}</Link>
-      : <div>{content}</div>
+    content.link
+      ? <Link href={content.link}>{body}</Link>
+      : <div>{body}</div>
   );
 }
