@@ -1,6 +1,14 @@
 import ContentBlock, { Content } from "@/components/ContentBlock";
 import Profile from "@/components/Profile";
-import { Book, GitHub, Headphones, Instagram, MessageCircle, RefreshCw, Type } from "react-feather";
+import {
+  Book,
+  GitHub,
+  Headphones,
+  Instagram,
+  MessageCircle,
+  RefreshCw,
+  Type,
+} from "react-feather";
 
 const data: Content[] = [
   {
@@ -20,13 +28,13 @@ const data: Content[] = [
   {
     Icon: Headphones,
     title: "지금 듣는 음악",
-    text: `Dancing Through Life \n- Movie Wicked OST`,
+    text: `새삼스럽게 왜 (악뮤)`,
     color: "emerald",
   },
   {
     Icon: Book,
     title: "지금 읽는 책",
-    text: `홍성욱의 STS, 과학을 경청하다 \n- 홍성욱`,
+    text: `급류 (정대건)`,
     color: "emerald",
   },
   {
@@ -53,7 +61,7 @@ const data: Content[] = [
   {
     Icon: RefreshCw,
     title: "마지막 수정 일시",
-    text: "2025년 6월 8일",
+    text: "2025년 6월 28일",
     color: "slate",
   },
 ];
@@ -64,10 +72,7 @@ export default function Home() {
       <Profile />
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-3 gap-4">
         {data.map((item, index) => (
-          <ContentBlock
-            key={index}
-            content={item}
-          />
+          <ContentBlock key={index} content={item} />
         ))}
       </div>
     </div>
