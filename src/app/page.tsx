@@ -3,7 +3,7 @@ import Profile from "@/components/Profile";
 import {
   Book,
   GitHub,
-  Headphones,
+  // Headphones,
   Instagram,
   MessageCircle,
   RefreshCw,
