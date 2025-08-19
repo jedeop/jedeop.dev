@@ -31,7 +31,7 @@ const data: Content[] = [
     title: "LinkedIn",
     text: "@Jaewon Park",
     color: "orange",
-    link: "www.linkedin.com/in/jaewonpark621639",
+    link: "https://www.linkedin.com/in/jaewonpark621639",
   },
   // {
   //   Icon: Headphones,
