@@ -8,15 +8,16 @@ import {
   MessageCircle,
   RefreshCw,
   Type,
+  Linkedin,
 } from "react-feather";
 
 const data: Content[] = [
   {
     Icon: MessageCircle,
-    title: "그래도 우리는 말합니다. 이번에도, 그럼에도, 재밌었노라고.",
-    text: `피드백 컴페티션 10주년 엔딩 무대 "THAT'S WHY WE DANCE" 中`,
+    title: `"I don't want to make something that's so perfect that someone else could have made it."`,
+    text: `Tom Sachs`,
     color: "red",
-    link: "https://youtu.be/p-6hP4bUWyU",
+    // link: "https://youtu.be/p-6hP4bUWyU",
   },
   {
     Icon: GitHub,
@@ -26,15 +27,22 @@ const data: Content[] = [
     link: "https://github.com/jedeop",
   },
   {
-    Icon: Headphones,
-    title: "지금 듣는 음악",
-    text: `새삼스럽게 왜 (악뮤)`,
-    color: "emerald",
+    Icon: Linkedin,
+    title: "LinkedIn",
+    text: "@Jaewon Park",
+    color: "orange",
+    link: "www.linkedin.com/in/jaewonpark621639",
   },
+  // {
+  //   Icon: Headphones,
+  //   title: "지금 듣는 음악",
+  //   text: `새삼스럽게 왜 (악뮤)`,
+  //   color: "emerald",
+  // },
   {
     Icon: Book,
     title: "지금 읽는 책",
-    text: `급류 (정대건)`,
+    text: `바른 마음 (조너선 하이트)`,
     color: "emerald",
   },
   {
@@ -61,7 +69,7 @@ const data: Content[] = [
   {
     Icon: RefreshCw,
     title: "마지막 수정 일시",
-    text: "2025년 6월 28일",
+    text: "2025년 8월 19일",
     color: "slate",
   },
 ];
