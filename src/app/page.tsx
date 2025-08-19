@@ -66,11 +66,25 @@ const data: Content[] = [
   },
 ];
 
+const grid_rows = [
+  "sm:grid-rows-1",
+  "sm:grid-rows-2",
+  "sm:grid-rows-3",
+  "sm:grid-rows-4",
+  "sm:grid-rows-5",
+  "sm:grid-rows-6",
+  "sm:grid-rows-7",
+  "sm:grid-rows-8",
+  "sm:grid-rows-9",
+  "sm:grid-rows-10",
+];
+const grid_row = grid_rows[Math.ceil(data.length / 3) - 1];
+
 export default function Home() {
   return (
     <div className="flex flex-col mx-auto max-w-2xl gap-8">
       <Profile />
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-3 gap-4">
+      <div className={`grid grid-cols-1 sm:grid-cols-3 ${grid_row} gap-4`}>
         {data.map((item, index) => (
           <ContentBlock key={index} content={item} />
         ))}
