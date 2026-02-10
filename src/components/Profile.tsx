@@ -11,7 +11,7 @@ export default function Profile() {
         </h1>
         <h2 className="font-bold text-gray-400 text-xl">
           더 밝고 따듯한 세상을 위해, <br />
-          사회와 정치에 기여하는 방법을 모색 중이다.
+          우리 사회에 기여하는 방법을 모색 중이다.
         </h2>
         <h2 className="font-bold text-gray-400 text-md">
           jwpark24@postech.ac.kr <br/>

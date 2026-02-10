@@ -14,7 +14,7 @@ export default function Home() {
       <Sep />
       <BookBox />
       <div className="text-gray-400 text-sm text-center">
-        2025년 10월 30일에 마지막으로 수정했습니다.
+        2026년 2월 11일에 마지막으로 수정했습니다.
       </div>
     </div>
   );
